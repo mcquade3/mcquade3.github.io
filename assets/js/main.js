@@ -33,6 +33,13 @@
 
 
 
+/* Force HTTPS */
+var host = "mcquade3.github.io";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+
+
+
 /* Back to Top Button */
 const scrollToTopButton = document.getElementById('js-top');
 
