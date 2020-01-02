@@ -1,0 +1,10 @@
+#header .actions:after {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .row {
+    display: -webkit-box;
+  }
+}
+/*# sourceMappingURL=override.css.map */

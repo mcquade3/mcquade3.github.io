@@ -4,7 +4,7 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
-@import url('fontawesome-all.min.css');
+@import url('/assets/css/fontawesome-all.min.css');
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 /*
@@ -470,7 +470,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;
@@ -1543,4 +1543,78 @@
 				@include padding(2em, 1em, (0,0,_size(element-margin),0));
 			}
 
+	}
+
+/* Back to Top Button */
+
+	.top-link {
+		transition: all .25s ease-in-out;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		display: inline-flex;
+		cursor: pointer;
+		align-items: center;
+		justify-content: center;
+		margin: 0 1em 1em 0;
+		border-radius: 50%;
+		padding: .25em;
+		width: 80px;
+		height: 80px;
+		background-color: #F8F8F8;
+	}
+
+	.show {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.hide {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	svg {
+		fill: #000;
+		width: 24px;
+		height: 12px;
+			
+		&:hover {
+			background-color: #E8E8E8;
+
+			svg {
+				fill: #000000;
+			}
+		}
+	}
+
+	// Text meant only for screen readers.
+	.screen-reader-text {
+		position: absolute;
+		clip-path: inset(50%);
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		word-wrap: normal !important;
+		clip: rect(1px, 1px, 1px, 1px);
+	
+		&:focus {
+			display: block;
+			top: 5px;
+			left: 5px;
+			z-index: 100000;
+			clip-path: none;
+			background-color: #eee;
+			padding: 15px 23px 14px;
+			width: auto;
+			height: auto;
+			text-decoration: none;
+			line-height: normal;
+			color: #444;
+			font-size: 1em;
+			clip: auto !important;
+		}
 	}
