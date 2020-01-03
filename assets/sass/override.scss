@@ -4,6 +4,15 @@
     }
 }
 
+#skillsAndExperience {
+    h3, h4 {
+        font-weight: bold;
+    }
+    h4 {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 980px) {
     .row {
         display: -webkit-box;

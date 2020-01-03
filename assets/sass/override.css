@@ -2,6 +2,14 @@
   display: none;
 }
 
+#skillsAndExperience h3, #skillsAndExperience h4 {
+  font-weight: bold;
+}
+
+#skillsAndExperience h4 {
+  margin: 0;
+}
+
 @media screen and (max-width: 980px) {
   .row {
     display: -webkit-box;
