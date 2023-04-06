@@ -1,8 +1,15 @@
 a:hover {
-	color: blue;
+	color: #0066ff;
+}
+
+.badges-row {
+	padding: 1.5rem 0 0;
 }
 
 #header {
+	p {
+    font-size: x-large;
+	}
 	.actions:after {
 		display: none;
 	}
